@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:background="#FFFFFF" android:orientation="horizontal" 
+	    android:layout_width="fill_parent" android:layout_height="70dip">
+	    <Button android:id="@+id/youtubeXML" android:text="Youtube\nXML"
+	        android:textColor="#FFF" android:background="@drawable/selector"
+	        android:layout_width="80dip" android:layout_height="fill_parent"/>
+	    
+	    <Button android:id="@+id/youtubeJSON" android:text="Youtube\nJSON"
+	        android:textColor="#FFF" android:background="@drawable/selector"
+	        android:layout_width="80dip" android:layout_height="fill_parent"/>
+	    
+	    <Button android:id="@+id/twitterXML" android:text="Twitter\nXML"
+	        android:textColor="#FFF" android:background="@drawable/selector"
+	        android:layout_width="80dip" android:layout_height="fill_parent"/>
+	    
+	    <Button android:id="@+id/twitterJSON" android:text="Twitter\nJSON"
+	        android:textColor="#FFF" android:background="@drawable/selector"
+	        android:layout_width="80dip" android:layout_height="fill_parent"/>
+	</LinearLayout>
+    
+    <TextView android:id="@+id/reqUrl"
+        android:text="URL : "
+        android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+    <TextView android:id="@+id/fileSize"
+        android:text="SIZE : " android:textSize="20sp" android:textColor="#333333"
+        android:layout_marginTop="5dip"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    
+	<TextView android:id="@+id/timeToDownlaod"
+        android:text="DOWNLOAD : " android:textSize="20sp" android:textColor="#333333"
+        android:layout_marginTop="5dip"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	
+	<TextView android:id="@+id/timeToParse"
+        android:text="PARSE : " android:textSize="20sp" android:textColor="#333333"
+        android:layout_marginTop="5dip"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	
+	<TextView android:id="@+id/totalTime"
+        android:text="TOTAL : " android:textSize="20sp" android:textColor="#333333"
+        android:layout_marginTop="5dip"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:background="#FFFFFF" android:orientation="horizontal"  
+	    android:gravity="bottom" android:layout_gravity="bottom"
+	    android:layout_width="fill_parent" android:layout_height="fill_parent">
+	    
+		<TextView  android:text="ITEM NUM: " android:textSize="30sp" android:textColor="#333333"
+        	android:layout_width="200dip" android:layout_height="70dip" />
+	    <EditText android:id="@+id/numItem" android:text="25" android:inputType="number"
+	        android:textSize="30sp" android:textColor="#333333"
+        	android:layout_width="fill_parent" android:layout_height="70dip" />"
+	</LinearLayout>
+</LinearLayout>
